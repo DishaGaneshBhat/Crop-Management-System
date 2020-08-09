@@ -1,0 +1,8 @@
+CREATE view small AS
+SELECT F.FieldID, F.Field_Name,C.CropID,C.Crop_Name,C.Crop_Season,C.Crop_Variety,S.SupplierID,S.Supplier_Name,S.Crop_Cost,S.Supplier_Address,H.Production,E.Amount_Spent
+FROM CROP C ,SUPPLIER S, FIELD F, HARVEST H,EXPENDITURE E,MAINTENANCE M
+WHERE C.CropID = F.CropID
+And S.CropID = C.CropID
+AND H.CropID = C.CropID
+And M.FielDID = F.FieldID
+And E.MaintenanceId = M.MAintenanceID

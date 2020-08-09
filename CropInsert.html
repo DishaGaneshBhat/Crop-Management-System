@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Insert</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+        <h2 style="text-align:center;color:Green;"><b>Insert Crop</b></h2>
+    <div style="width:400px;margin:0 auto;padding-top:10%;">
+
+	<form action="CropInsert.php" method="POST">
+		<div class="form-group"><!--This is bootstrap class-->
+			<label>Crop ID</label>
+			<input type="text" name="CropID" placeholder="Enter the Crop ID" class="form-control">
+		</div>
+                 <div class="form-group">
+			<label>Date</label>
+			<input type="text" name="year" placeholder="Enter the Date" class="form-control">
+		</div>
+               <div class="form-group">
+			<label>Crop Name</label>
+			<input type="text" name="Crop_Name" placeholder="Enter the Crop Name" class="form-control">
+		</div>
+
+		
+		<div class="form-group">
+			<label>Crop_Type</label>
+			<select name="Crop_Season" class="form-control">
+				<option value="Rabi">Rabi</option>
+				<option value="Kharif">Kharif</option>
+			</select>
+		</div>
+                <div class="form-group">
+			<label>Crop Variety</label>
+			<input type="text" name="Crop_Variety" placeholder="Enter the crop variety" class="form-control">
+		</div>
+		
+		<button type="submit" name="save" class="btn btn-info">Save</button>
+	</form>
+</body>
+</html>

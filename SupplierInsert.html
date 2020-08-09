@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Insert</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+	<h2 style="text-align:center;color:Purple;"><b>Insert Supplier</b></h2>
+    <div style="width:400px;margin:0 auto;padding-top:10%;">
+	
+	<form action="SupplierInsert.php" method="POST">
+           <div class="form-group"><!--This is bootstrap class-->
+			<label>Supplier ID</label>
+			<input type="text" name="SupplierID" placeholder="Enter the Supplier ID" class="form-control">
+		</div>
+		<div class="form-group"><!--This is bootstrap class-->
+			<label>Supplier Name</label>
+			<input type="text" name="Supplier_Name" placeholder="Enter the Supplier name" class="form-control">
+		</div>
+                <div class="form-group"><!--This is bootstrap class-->
+			<label>Crop Name</label>
+			<input type="text" name="Crop_Name" placeholder="Enter the Crop name" class="form-control">
+		</div>
+               <div class="form-group"><!--This is bootstrap class-->
+			<label>Date</label>
+			<input type="text" name="year" placeholder="Enter the date" class="form-control">
+		</div>
+
+
+		<div class="form-group">
+			<label>Crop Cost</label>
+			<input type="text" name="Crop_Cost" placeholder="Enter the Crop cost in Rs"class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Supplier Address</label>
+			<input type="text" name="Supplier_Address" placeholder="Enter the Supplier Address" class="form-control">
+		</div>
+		
+		<div class="form-group">
+			<label>Contact no</label>
+			<input type="text" name="Contact_No" placeholder="Enter the Contact no" class="form-control">
+		</div>
+		<button type="submit" name="save" class="btn btn-info">Save</button>
+	</form>
+</body>
+</html>
